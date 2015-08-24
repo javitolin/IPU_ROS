@@ -214,6 +214,30 @@ Algos/FirstTask/FirstTaskGate.cpp.s:
 	cd /home/jdorfsman/git/IPU_ROS/build && $(MAKE) -f hc_vision/CMakeFiles/hc_vision_src.dir/build.make hc_vision/CMakeFiles/hc_vision_src.dir/Algos/FirstTask/FirstTaskGate.cpp.s
 .PHONY : Algos/FirstTask/FirstTaskGate.cpp.s
 
+Algos/SecondTask/SecondTaskCollision.o: Algos/SecondTask/SecondTaskCollision.cpp.o
+.PHONY : Algos/SecondTask/SecondTaskCollision.o
+
+# target to build an object file
+Algos/SecondTask/SecondTaskCollision.cpp.o:
+	cd /home/jdorfsman/git/IPU_ROS/build && $(MAKE) -f hc_vision/CMakeFiles/hc_vision_src.dir/build.make hc_vision/CMakeFiles/hc_vision_src.dir/Algos/SecondTask/SecondTaskCollision.cpp.o
+.PHONY : Algos/SecondTask/SecondTaskCollision.cpp.o
+
+Algos/SecondTask/SecondTaskCollision.i: Algos/SecondTask/SecondTaskCollision.cpp.i
+.PHONY : Algos/SecondTask/SecondTaskCollision.i
+
+# target to preprocess a source file
+Algos/SecondTask/SecondTaskCollision.cpp.i:
+	cd /home/jdorfsman/git/IPU_ROS/build && $(MAKE) -f hc_vision/CMakeFiles/hc_vision_src.dir/build.make hc_vision/CMakeFiles/hc_vision_src.dir/Algos/SecondTask/SecondTaskCollision.cpp.i
+.PHONY : Algos/SecondTask/SecondTaskCollision.cpp.i
+
+Algos/SecondTask/SecondTaskCollision.s: Algos/SecondTask/SecondTaskCollision.cpp.s
+.PHONY : Algos/SecondTask/SecondTaskCollision.s
+
+# target to generate assembly for a file
+Algos/SecondTask/SecondTaskCollision.cpp.s:
+	cd /home/jdorfsman/git/IPU_ROS/build && $(MAKE) -f hc_vision/CMakeFiles/hc_vision_src.dir/build.make hc_vision/CMakeFiles/hc_vision_src.dir/Algos/SecondTask/SecondTaskCollision.cpp.s
+.PHONY : Algos/SecondTask/SecondTaskCollision.cpp.s
+
 Algos/ThirdTask/ThirdTaskBlackBox.o: Algos/ThirdTask/ThirdTaskBlackBox.cpp.o
 .PHONY : Algos/ThirdTask/ThirdTaskBlackBox.o
 
@@ -570,6 +594,9 @@ help:
 	@echo "... Algos/FirstTask/FirstTaskGate.o"
 	@echo "... Algos/FirstTask/FirstTaskGate.i"
 	@echo "... Algos/FirstTask/FirstTaskGate.s"
+	@echo "... Algos/SecondTask/SecondTaskCollision.o"
+	@echo "... Algos/SecondTask/SecondTaskCollision.i"
+	@echo "... Algos/SecondTask/SecondTaskCollision.s"
 	@echo "... Algos/ThirdTask/ThirdTaskBlackBox.o"
 	@echo "... Algos/ThirdTask/ThirdTaskBlackBox.i"
 	@echo "... Algos/ThirdTask/ThirdTaskBlackBox.s"

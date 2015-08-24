@@ -104,7 +104,18 @@ void commandLog(int command) {
 	case 211:
 		_log->printLog("", "Stopping task 1 filter...", "Info");
 		break;
-
+	case 202:
+		_log->printLog("", "Starting task 2 filter...", "Info");
+		break;
+	case 212:
+		_log->printLog("", "Stopping task 2 filter...", "Info");
+		break;
+	case 203:
+		_log->printLog("", "Starting task 3 filter...", "Info");
+		break;
+	case 213:
+		_log->printLog("", "Stopping task 3 filter...", "Info");
+		break;
 	default:
 		_log->printLog("", "Unknown command...", "Error");
 		break;
@@ -134,6 +145,8 @@ void initCodes() {
 	server_codes["stop_task_1"] = 211;
 	server_codes["start_task_2"] = 202;
 	server_codes["stop_task_2"] = 212;
+	server_codes["start_task_3"] = 203;
+	server_codes["stop_task_3"] = 213;
 
 }
 
@@ -981,10 +994,14 @@ void chatterCallback(const std_msgs::String::ConstPtr& msg) {
 		start_task(1);
 	else if(codeReceived == server_codes["start_task_2"])
 			start_task(2);
+	else if(codeReceived == server_codes["start_task_3"])
+			start_task(3);
 	else if(codeReceived == server_codes["stop_task_1"])
 			stop_task(1);
 	else if(codeReceived == server_codes["stop_task_2"])
 			stop_task(2);
+	else if(codeReceived == server_codes["stop_task_3"])
+			stop_task(3);
 	else
 		printf("Code %d not recognized\n",codeReceived);
 }

@@ -10,6 +10,7 @@
 #include "FilterRunThread.h"
 #include "../Algos/FirstTask/FirstTaskGate.h"
 #include "../Algos/ThirdTask/ThirdTaskBlackBox.h"
+#include "../Algos/SecondTask/SecondTaskCollision.h"
 #include "../include/Log.h"
 #include "RosNetwork.h"
 #include <vector>

@@ -22,11 +22,17 @@ bool FilterThreadPool::generateFilters(RosNetwork* rosN,Log* _log) {
 	taskNames.push_back(firstTaskName);					//Adding to channel list
 
 
-	ThirdTaskBlackBox* secondTaskFilter = new ThirdTaskBlackBox();
+	ThirdTaskBlackBox* blackBoxFilter = new ThirdTaskBlackBox();
 	string blackBoxConfig = "ThirdTaskBlackBox";
 	char* secondTaskChannel = "driverChannel";
 	char* secondTaskName = "SecondTaskFilter_Channel";
 	taskNames.push_back(secondTaskName);
+
+	SecondTaskCollision* collisionFilter = new SecondTaskCollision();
+	string collisionConfig = "collision";
+	char* collisionChannel = "driverChannel";
+	char* collisionName = "collision_channel";
+	taskNames.push_back(collisionName);
 
 	try
 	{
@@ -42,10 +48,21 @@ bool FilterThreadPool::generateFilters(RosNetwork* rosN,Log* _log) {
 	{
 		map<string, string> args;
 		ParamUtils::ReadDefaultConfigFile(blackBoxConfig, args, false);
-		secondTaskFilter->Load(args);
+		blackBoxFilter->Load(args);
 	} catch (ParameterException& e)
 	{
 		_log->printLog("FilterThreadPool::generateFilters",  "problem in loading parameters of " + blackBoxConfig + ":" + e.what() ,"Error");
+		return false;
+	}
+
+	try
+	{
+		map<string, string> args;
+		ParamUtils::ReadDefaultConfigFile(collisionConfig, args, false);
+		collisionFilter->Load(args);
+	} catch (ParameterException& e)
+	{
+		_log->printLog("FilterThreadPool::generateFilters",  "problem in loading parameters of " + collisionConfig + ":" + e.what() ,"Error");
 		return false;
 	}
 
@@ -55,13 +72,16 @@ bool FilterThreadPool::generateFilters(RosNetwork* rosN,Log* _log) {
 	FilterRunThread* firstTask = new FilterRunThread(firstTaskChannel, true,
 			rosN, ftg, firstTaskName, 1);
 	FilterRunThread* secondTask = new FilterRunThread(secondTaskChannel, true,
-			rosN, secondTaskFilter, secondTaskName, 2);
+			rosN, blackBoxFilter, secondTaskName, 2);
+	FilterRunThread* collisionTask = new FilterRunThread(collisionChannel, true,
+			rosN, collisionFilter, collisionName, 3);
 
 	/*
 	 * Adding to filters list
 	 */
 	_filters.push_back(firstTask);
 	_filters.push_back(secondTask);
+	_filters.push_back(collisionTask);
 
 	for(int i = 0; i < taskNames.size(); i++){
 		char* name = taskNames[i];

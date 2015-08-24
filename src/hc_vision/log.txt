@@ -46653,3 +46653,406 @@ Info
 FilterThreadPool::generateFilters:	Date: 18-08-2015	Time: 17:10:37
 Error
 	problem in loading parameters of firstTaskConfig:morph_elem: don't exists in args
+Date: 23-08-2015	Time: 23:34:09
+Date: 23-08-2015	Time: 23:34:09
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 23-08-2015	Time: 23:34:09
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 23-08-2015	Time: 23:34:09
+Info
+	Loading created filters...
+FilterHandler:	Date: 23-08-2015	Time: 23:34:09
+Info
+	Done loading created filters
+Date: 23-08-2015	Time: 23:34:09
+Info
+	Waiting for client...
+FilterThreadPool::generateFilters:	Date: 23-08-2015	Time: 23:34:09
+Error
+	problem in loading parameters of ThirdTaskBlackBox:bb_thresh: don't exists in args
+Date: 23-08-2015	Time: 23:34:56
+Date: 23-08-2015	Time: 23:34:56
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 23-08-2015	Time: 23:34:56
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 23-08-2015	Time: 23:34:56
+Info
+	Loading created filters...
+FilterHandler:	Date: 23-08-2015	Time: 23:34:56
+Info
+	Done loading created filters
+Date: 23-08-2015	Time: 23:34:56
+Info
+	Waiting for client...
+Date: 23-08-2015	Time: 23:36:10
+Date: 23-08-2015	Time: 23:36:10
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 23-08-2015	Time: 23:36:10
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 23-08-2015	Time: 23:36:10
+Info
+	Loading created filters...
+FilterHandler:	Date: 23-08-2015	Time: 23:36:10
+Info
+	Done loading created filters
+Date: 23-08-2015	Time: 23:36:10
+Info
+	Waiting for client...
+Date: 24-08-2015	Time: 15:02:30
+Date: 24-08-2015	Time: 15:02:30
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 24-08-2015	Time: 15:02:30
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 24-08-2015	Time: 15:02:30
+Info
+	Loading created filters...
+FilterHandler:	Date: 24-08-2015	Time: 15:02:30
+Info
+	Done loading created filters
+Date: 24-08-2015	Time: 15:02:30
+Info
+	Waiting for client...
+Date: 24-08-2015	Time: 17:53:12
+Date: 24-08-2015	Time: 17:53:12
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 24-08-2015	Time: 17:53:12
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 24-08-2015	Time: 17:53:12
+Info
+	Loading created filters...
+FilterHandler:	Date: 24-08-2015	Time: 17:53:12
+Info
+	Done loading created filters
+Date: 24-08-2015	Time: 17:53:12
+Error
+	bind: Address already in use
+Date: 24-08-2015	Time: 17:53:12
+Info
+	Communication ended at: Date: 24-08-2015	Time: 17:53:12
+
+
+Date: 24-08-2015	Time: 17:54:24
+Date: 24-08-2015	Time: 17:54:24
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 24-08-2015	Time: 17:54:24
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 24-08-2015	Time: 17:54:24
+Info
+	Loading created filters...
+FilterHandler:	Date: 24-08-2015	Time: 17:54:24
+Info
+	Done loading created filters
+Date: 24-08-2015	Time: 17:54:24
+Error
+	bind: Address already in use
+Date: 24-08-2015	Time: 17:54:24
+Info
+	Communication ended at: Date: 24-08-2015	Time: 17:54:24
+
+
+Date: 24-08-2015	Time: 17:54:50
+Date: 24-08-2015	Time: 17:54:50
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 24-08-2015	Time: 17:54:50
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 24-08-2015	Time: 17:54:50
+Info
+	Loading created filters...
+FilterHandler:	Date: 24-08-2015	Time: 17:54:50
+Info
+	Done loading created filters
+Date: 24-08-2015	Time: 17:54:50
+Error
+	bind: Address already in use
+Date: 24-08-2015	Time: 17:54:50
+Info
+	Communication ended at: Date: 24-08-2015	Time: 17:54:50
+
+
+Date: 24-08-2015	Time: 20:38:44
+Date: 24-08-2015	Time: 20:38:44
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 24-08-2015	Time: 20:38:44
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 24-08-2015	Time: 20:38:44
+Info
+	Loading created filters...
+FilterHandler:	Date: 24-08-2015	Time: 20:38:44
+Info
+	Done loading created filters
+Date: 24-08-2015	Time: 20:38:44
+Error
+	bind: Address already in use
+Date: 24-08-2015	Time: 20:38:44
+Info
+	Communication ended at: Date: 24-08-2015	Time: 20:38:44
+
+
+Date: 24-08-2015	Time: 22:52:16
+Date: 24-08-2015	Time: 22:52:16
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 24-08-2015	Time: 22:52:16
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 24-08-2015	Time: 22:52:16
+Info
+	Loading created filters...
+FilterHandler:	Date: 24-08-2015	Time: 22:52:16
+Info
+	Done loading created filters
+Date: 24-08-2015	Time: 22:52:16
+Info
+	Waiting for client...
+Date: 24-08-2015	Time: 23:15:59
+Date: 24-08-2015	Time: 23:15:59
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 24-08-2015	Time: 23:15:59
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 24-08-2015	Time: 23:15:59
+Info
+	Loading created filters...
+FilterHandler:	Date: 24-08-2015	Time: 23:15:59
+Info
+	Done loading created filters
+Date: 24-08-2015	Time: 23:15:59
+Info
+	Waiting for client...
+FilterThreadPool::generateFilters:	Date: 24-08-2015	Time: 23:15:59
+Error
+	problem in loading parameters of collision:problem in loading parameters of collision
+Date: 24-08-2015	Time: 23:16:40
+Date: 24-08-2015	Time: 23:16:40
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 24-08-2015	Time: 23:16:40
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 24-08-2015	Time: 23:16:40
+Info
+	Loading created filters...
+FilterHandler:	Date: 24-08-2015	Time: 23:16:40
+Info
+	Done loading created filters
+Date: 24-08-2015	Time: 23:16:40
+Info
+	Waiting for client...
+FilterThreadPool::generateFilters:	Date: 24-08-2015	Time: 23:16:40
+Error
+	problem in loading parameters of collision:minArea: don't exists in args
+Date: 24-08-2015	Time: 23:16:52
+Date: 24-08-2015	Time: 23:16:52
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 24-08-2015	Time: 23:16:52
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 24-08-2015	Time: 23:16:52
+Info
+	Loading created filters...
+FilterHandler:	Date: 24-08-2015	Time: 23:16:52
+Info
+	Done loading created filters
+Date: 24-08-2015	Time: 23:16:52
+Info
+	Waiting for client...
+FilterThreadPool::generateFilters:	Date: 24-08-2015	Time: 23:16:52
+Error
+	problem in loading parameters of collision:minArea: don't exists in args
+Date: 24-08-2015	Time: 23:17:56
+Date: 24-08-2015	Time: 23:17:56
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 24-08-2015	Time: 23:17:56
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 24-08-2015	Time: 23:17:56
+Info
+	Loading created filters...
+FilterHandler:	Date: 24-08-2015	Time: 23:17:56
+Info
+	Done loading created filters
+Date: 24-08-2015	Time: 23:17:56
+Info
+	Waiting for client...
+FilterThreadPool::generateFilters:	Date: 24-08-2015	Time: 23:17:56
+Error
+	problem in loading parameters of collision:minArea: don't exists in args
+Date: 24-08-2015	Time: 23:18:03
+Date: 24-08-2015	Time: 23:18:03
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 24-08-2015	Time: 23:18:03
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 24-08-2015	Time: 23:18:03
+Info
+	Loading created filters...
+FilterHandler:	Date: 24-08-2015	Time: 23:18:03
+Info
+	Done loading created filters
+Date: 24-08-2015	Time: 23:18:03
+Info
+	Waiting for client...
+Date: 24-08-2015	Time: 23:18:24
+Date: 24-08-2015	Time: 23:18:24
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 24-08-2015	Time: 23:18:24
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 24-08-2015	Time: 23:18:24
+Info
+	Loading created filters...
+FilterHandler:	Date: 24-08-2015	Time: 23:18:24
+Info
+	Done loading created filters
+Date: 24-08-2015	Time: 23:18:24
+Info
+	Waiting for client...
+Date: 24-08-2015	Time: 23:21:39
+Date: 24-08-2015	Time: 23:21:39
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 24-08-2015	Time: 23:21:39
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 24-08-2015	Time: 23:21:39
+Info
+	Loading created filters...
+FilterHandler:	Date: 24-08-2015	Time: 23:21:39
+Info
+	Done loading created filters
+Date: 24-08-2015	Time: 23:21:39
+Info
+	Waiting for client...

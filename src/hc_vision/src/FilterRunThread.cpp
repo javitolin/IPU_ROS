@@ -32,6 +32,7 @@ void FilterRunThread::runFilter() {
 			Mat newImage;
 			_filter->Draw(newImage); //Draw the result onto newImage
 			_filter->ToMesseges(vec); //Get the messages of the filter to vec
+			string msgToSend = "";
 			for (unsigned int i = 0; i < vec.size(); i++) {
 				MissionControlMessage m = vec[i]; //Read the message
 				for(int j = 0 ; j<m.bounds.size(); j++){
@@ -43,11 +44,17 @@ void FilterRunThread::runFilter() {
 					ostringstream convertS;
 					convertS << m.bounds[j].first;
 					second = convertF.str();
-
-				_ros->sendMessage(first	, (_filterNum-1)); //Send through ROS
-				_ros->sendMessage(second	, (_filterNum-1)); //Send through ROS
+					if(j == m.bounds.size() -1 )
+						msgToSend = msgToSend + first + "," + second;
+					else
+						msgToSend = msgToSend + first + "," + second + ",";
+				//_ros->sendMessage(first	, (_filterNum-1)); //Send through ROS
+				//_ros->sendMessage(second	, (_filterNum-1)); //Send through ROS
 				}
+				if(i < vec.size()-1)
+					msgToSend = msgToSend + "@";
 			}
+			_ros->sendMessage(msgToSend, (_filterNum-1));
 
 		} else {
 			cout << "image was empty" << endl;
