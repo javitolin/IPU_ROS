@@ -962,7 +962,6 @@ void recordUnfiltered(bool start) {
 		video_stream->stopRecordUnfiltered(use_front_camera);
 }
 void stop_task(int filterNum) {
-	cout << "stopping filter " << filterNum << endl;
 	for(unsigned int i = 0; i < filterRunThreads.size(); i++){
 		if(filterRunThreads.at(i)->getFilterNum() == filterNum){
 			filterThreads.at(i)->interrupt();
@@ -978,7 +977,6 @@ void start_task(int filterNum) {
 	if (frt != 0) {
 		boost::thread *filterThread = new boost::thread(
 				&FilterRunThread::runFilter, frt);
-		cout << "Starting thread" << endl;
 		filterThreads.push_back(filterThread);
 		filterRunThreads.push_back(frt);
 	}

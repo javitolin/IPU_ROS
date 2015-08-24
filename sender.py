@@ -68,9 +68,11 @@ def talker():
 	rate.sleep()
 	print("Received " + str(firstFilterCount) +" messages from the first filter")
 	print("Received " + str(secondFilterCount) +" messages from the second filter")
+	print("Received " + str(thirdFilterCount) +" messages from the third filter")
 	print("End test 1")
 	
 
+	thirdFilterCount = 0
 	firstFilterCount = 0
 	secondFilterCount = 0
 	print("Waiting 3 seconds between tests...")
@@ -81,8 +83,8 @@ def talker():
 	pub.publish("212")	#Stopping filter 2
 	print("Received " + str(firstFilterCount) +" messages from the first filter")
 	print("Received " + str(secondFilterCount) +" messages from the second filter")
+	print("Received " + str(thirdFilterCount) +" messages from the third filter")
 	print("End test 2")
-
 
 	firstFilterCount = 0
 	secondFilterCount = 0
@@ -101,8 +103,8 @@ def talker():
 	print("Received " + str(secondFilterCount) +" messages from the second filter")
 	print("Received " + str(thirdFilterCount) +" messages from the third filter")
 	print("End test 3")
-
-
+	
+	thirdFilterCount = 0
 	firstFilterCount = 0
 	secondFilterCount = 0
 	print("Waiting 3 seconds between tests...")
@@ -112,9 +114,11 @@ def talker():
 	rate.sleep()
 	print("Received " + str(firstFilterCount) +" messages from the first filter")
 	print("Received " + str(secondFilterCount) +" messages from the second filter")
+	print("Received " + str(thirdFilterCount) +" messages from the third filter")
 	print("End test 4")
 
 
+	thirdFilterCount = 0
 	firstFilterCount = 0
 	secondFilterCount = 0
 	print("Waiting 3 seconds between tests...")
@@ -133,9 +137,11 @@ def talker():
 	pub.publish("211")	#Stopping filter 1 once. Should stop the system entirely
 	print("Received " + str(firstFilterCount) +" messages from the first filter")
 	print("Received " + str(secondFilterCount) +" messages from the second filter")
+	print("Received " + str(thirdFilterCount) +" messages from the third filter")
 	print("End test 5")
 
 
+	thirdFilterCount = 0
 	firstFilterCount = 0
 	secondFilterCount = 0
 	print("Waiting 3 seconds between tests...")
@@ -154,6 +160,7 @@ def talker():
 	pub.publish("212")	#Stopping filter 2 again (shouldn't make any problem)
 	print("Received " + str(firstFilterCount) +" messages from the first filter")
 	print("Received " + str(secondFilterCount) +" messages from the second filter")
+	print("Received " + str(thirdFilterCount) +" messages from the third filter")
 	print("End test 6")
 
 	#Add pretty prints "starting test 7".. "ending test 7" and test numbers.
@@ -162,10 +169,9 @@ def talker():
 	#pub.publish(203) to start your filter
 	#time.sleep(seconds) let it play some time
 	#pub.publish(213) stop the filter
-
 	print("In total received " + str(totalFirstFilterCount) +" messages from the first filter")
 	print("In total received " + str(totalSecondFilterCount) +" messages from the second filter")
-	print("In total received " + str(totalThirdFilterCount) +" messages from the second filter")
+	print("In total received " + str(totalThirdFilterCount) +" messages from the third filter")
 	t1._Thread__stop()
 
 

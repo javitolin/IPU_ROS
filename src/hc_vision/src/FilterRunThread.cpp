@@ -23,7 +23,6 @@ FilterRunThread::FilterRunThread(char* imageSrcChannel, bool camera,
 void FilterRunThread::runFilter() {
 	while (1) {
 		boost::this_thread::interruption_point();
-		cout <<  "Filter " << _filterNum << " Running" << endl;
 		vector<MissionControlMessage> vec;
 		Mat mat;
 		_ros->getFrontImage(mat); //Get an image from the camera
@@ -48,8 +47,6 @@ void FilterRunThread::runFilter() {
 						msgToSend = msgToSend + first + "," + second;
 					else
 						msgToSend = msgToSend + first + "," + second + ",";
-				//_ros->sendMessage(first	, (_filterNum-1)); //Send through ROS
-				//_ros->sendMessage(second	, (_filterNum-1)); //Send through ROS
 				}
 				if(i < vec.size()-1)
 					msgToSend = msgToSend + "@";
