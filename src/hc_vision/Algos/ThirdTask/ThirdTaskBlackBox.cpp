@@ -94,6 +94,7 @@ void ThirdTaskBlackBox::Load(map<string, string>& params){
 void ThirdTaskBlackBox::ToMesseges(vector<MissionControlMessage>& res){
 
 	//send back to ros part:
+	if(boundRect.size()>0){
 	for( uint i = 0; i< boundRect.size(); i++ )
 	{
 		if(draw[i]){
@@ -110,6 +111,13 @@ void ThirdTaskBlackBox::ToMesseges(vector<MissionControlMessage>& res){
 			msg.bounds.push_back(std::make_pair(bottomLeft.x,bottomLeft.y));
 			res.push_back(msg);
 		}
+	}
+}
+	else{
+		MissionControlMessage msg;
+		msg.MissionCode = 3;
+		msg.bounds.push_back(std::make_pair(-1,-1));
+		res.push_back(msg);
 	}
 
 }

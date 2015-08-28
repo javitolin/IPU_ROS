@@ -5,10 +5,11 @@
  * TODO: change FilterRun to the one in the main!
  */
 #include "../include/VideoStream.h"
+
 using namespace std;
 using namespace cv;
 
-VideoStream::VideoStream(boost::asio::ip::udp::socket* socket, FilterRun* filterRun, FilterHandler* filterHandler, Log* log)
+VideoStream::VideoStream(boost::asio::ip::udp::socket* socket, FilterRun* filterRun, FilterHandler* filterHandler, Log* log, RosNetwork *ros)
 {
 	_streaming = false;
 	_deleteClientThread = false;
@@ -27,6 +28,7 @@ VideoStream::VideoStream(boost::asio::ip::udp::socket* socket, FilterRun* filter
 	_filterHandler = filterHandler;
 	_log = log;
 	_frameSize = Size(300,200);
+	_ros = ros;
 
 	_vidNum = checkVidFileNum();
 }
@@ -54,28 +56,6 @@ VideoStream::~VideoStream()
 	if(_recordUnfilteredBottom)
 		delete _bottomUnfiltered;
 }
-
-/*
-void VideoStream::initCameras()
-{
-	_cameraControl.Init();
-	map<CameraType, CameraStatus> stat = _cameraControl.GetStatus();
-	if(stat[Left] == NotWorking)
-	{
-		_log->printLog("VideoStream", "Left camera not working", "Error");
-		_leftCameraWorking = false;
-	}
-	if(stat[Right] == NotWorking)
-	{
-		_log->printLog("VideoStream", "Right camera not working", "Error");
-		_rightCameraWorking = false;
-	}
-	if(stat[Bottom] == NotWorking)
-	{
-		_log->printLog("VideoStream", "Bottom camera not working", "Error");
-		_bottomCameraWorking = false;
-	}
-}*/
 
 /*
  * Return the last number used for the videos in the VideoLog folder. We call this function so we will know what's the next
@@ -166,14 +146,14 @@ void VideoStream::listenOnClient()
 //Taking frames from usb camera and sending them to client
 void VideoStream::runFront()
 {
-	cv::VideoCapture cap(0);
+	/*cv::VideoCapture cap(0);
 	cap.set(CV_CAP_PROP_FPS, 15);
 
 	if( !cap.isOpened() )
 	{
 		_log->printLog("VideoStream", "Failed to connect to front camera. killing thread...", "Error" );
 		return;
-	}
+	}*/
 
 	while( !_killStream )
 	{
@@ -193,7 +173,15 @@ void VideoStream::runFront()
 		Mat frame;
 //		Mat *left, *right;
 		//get a new frame from camera.
-		cap >> frame;
+		////////////////////////////////////
+		//cap >> frame;
+
+		/******************/
+		/*Switching to ROS*/
+
+		//getFrontImage(frame);
+		_ros->getFrontImage(frame);
+		////////////////////////////////////
 		if(_recordUnfilteredFront)
 			recordUnfiltered(frame, true);
 
@@ -226,13 +214,13 @@ void VideoStream::runFront()
 
 void VideoStream::runBottom()
 {
-	cv::VideoCapture cap(0);
+	/*cv::VideoCapture cap(0);
 	cap.set(CV_CAP_PROP_FPS, 15);
 	if( !cap.isOpened() )
 	{
 		_log->printLog("VideoStream", "Failed to connect to bottom camera. killing thread...", "Error" );
 		return;
-	}
+	}*/
 	if(!_bottomCameraWorking)
 	{
 		_log->printLog("VideoStream", "Bottom camera not working. Killing thread...", "Error");
@@ -252,19 +240,13 @@ void VideoStream::runBottom()
 			_stopedStreamingBottom = false;
 		}
 		Mat frame;
-		Mat* bottom;
+		/******************/
+		/*Switching to ROS*/
+		//Mat* bottom;
 		//get a new frame from camera.
-		cap >> frame;
-		//		try{
-		//			bottom = _cameraControl.Read(Bottom);
-		//		} catch(CamerasException& ex){
-		//			bottom = NULL;
-		//		}
-		//
-		//		if(bottom != NULL)
-		//			frame = *bottom;
-		//		else
-		//			continue; //What to do?!
+		//cap >> frame;
+		_ros->getBottomImage(frame);
+
 		if(_recordUnfilteredBottom)
 			recordUnfiltered(frame, false);
 
@@ -285,8 +267,6 @@ void VideoStream::runBottom()
 		for(it = bottom_filtered_mats.begin(); it != bottom_filtered_mats.end(); ++it)
 			delete it->second;
 		delete image;
-		if(bottom != NULL)
-			delete bottom;
 	}
 
 	_log->printLog("VideoStream", "Video stream has ended successfully","Info");

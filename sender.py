@@ -15,7 +15,31 @@ thirdFilterCount = 0
 totalFirstFilterCount = 0
 totalSecondFilterCount = 0
 totalThirdFilterCount = 0
+tests = 0
+testPassed = 0
+testFailed = 0
+class bcolors:
+    HEADER = '\033[95m'
+    OKBLUE = '\033[94m'
+    OKGREEN = '\033[92m'
+    WARNING = '\033[93m'
+    FAIL = '\033[91m'
+    ENDC = '\033[0m'
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'
+def printFail(text):
+	global testFailed
+	global tests
+	tests = tests + 1
+	testFailed = testFailed + 1
+	print(bcolors.FAIL+"FAIL: {0}".format(text)+bcolors.ENDC)
 
+def printPass(text):
+	global testPassed
+	global tests
+	tests = tests + 1
+	testPassed = testPassed + 1
+	print(bcolors.OKGREEN+"PASS: {0}".format(text)+bcolors.ENDC)
 #This is the callback for the ros message. Each channel subscribed should have another callback.
 def callbackFirst(data):
 	global firstFilterCount
@@ -55,6 +79,9 @@ def listener():
     rospy.spin()
 
 def talker():
+	global testPassed
+	global tests
+	global testFailed
 	global firstFilterCount
 	global secondFilterCount
 	global thirdFilterCount
@@ -69,6 +96,10 @@ def talker():
 	print("Received " + str(firstFilterCount) +" messages from the first filter")
 	print("Received " + str(secondFilterCount) +" messages from the second filter")
 	print("Received " + str(thirdFilterCount) +" messages from the third filter")
+	if firstFilterCount > 50 and secondFilterCount < 5 and thirdFilterCount < 5:
+		printPass("First Test")
+	else:
+		printFail("First Test")
 	print("End test 1")
 	
 
@@ -84,6 +115,10 @@ def talker():
 	print("Received " + str(firstFilterCount) +" messages from the first filter")
 	print("Received " + str(secondFilterCount) +" messages from the second filter")
 	print("Received " + str(thirdFilterCount) +" messages from the third filter")
+	if firstFilterCount < 5 and secondFilterCount > 50 and thirdFilterCount < 5:
+		printPass("Second Test")
+	else:
+		printFail("Second Test")
 	print("End test 2")
 
 	firstFilterCount = 0
@@ -102,6 +137,10 @@ def talker():
 	print("Received " + str(firstFilterCount) +" messages from the first filter")
 	print("Received " + str(secondFilterCount) +" messages from the second filter")
 	print("Received " + str(thirdFilterCount) +" messages from the third filter")
+	if firstFilterCount > 50 and secondFilterCount > 50 and thirdFilterCount > 50:
+		printPass("Third Test")
+	else:
+		printFail("Third Test")
 	print("End test 3")
 	
 	thirdFilterCount = 0
@@ -115,6 +154,10 @@ def talker():
 	print("Received " + str(firstFilterCount) +" messages from the first filter")
 	print("Received " + str(secondFilterCount) +" messages from the second filter")
 	print("Received " + str(thirdFilterCount) +" messages from the third filter")
+	if firstFilterCount < 5 and secondFilterCount < 5 and thirdFilterCount < 5:
+		printPass("Fourth Test")
+	else:
+		printFail("Fourth Test")
 	print("End test 4")
 
 
@@ -138,6 +181,10 @@ def talker():
 	print("Received " + str(firstFilterCount) +" messages from the first filter")
 	print("Received " + str(secondFilterCount) +" messages from the second filter")
 	print("Received " + str(thirdFilterCount) +" messages from the third filter")
+	if firstFilterCount > 50 and secondFilterCount < 5 and thirdFilterCount < 5:
+		printPass("Fifth Test")
+	else:
+		printFail("Fifth Test")
 	print("End test 5")
 
 
@@ -161,6 +208,10 @@ def talker():
 	print("Received " + str(firstFilterCount) +" messages from the first filter")
 	print("Received " + str(secondFilterCount) +" messages from the second filter")
 	print("Received " + str(thirdFilterCount) +" messages from the third filter")
+	if firstFilterCount < 5 and secondFilterCount > 50 and thirdFilterCount < 5:
+		printPass("Sixth Test")
+	else:
+		printFail("Sixth Test")
 	print("End test 6")
 
 	#Add pretty prints "starting test 7".. "ending test 7" and test numbers.
@@ -172,6 +223,8 @@ def talker():
 	print("In total received " + str(totalFirstFilterCount) +" messages from the first filter")
 	print("In total received " + str(totalSecondFilterCount) +" messages from the second filter")
 	print("In total received " + str(totalThirdFilterCount) +" messages from the third filter")
+	#print bcolors.WARNING + "Warning: No active frommets remain. Continue?" + bcolors.ENDC
+	print("Tests: {0},".format(tests)+bcolors.OKGREEN+" Passed: {0}".format(testPassed)+bcolors.ENDC+","+bcolors.FAIL+" Failed: {0}".format(testFailed)+bcolors.ENDC)
 	t1._Thread__stop()
 
 

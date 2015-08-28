@@ -47056,3 +47056,368 @@ Info
 Date: 24-08-2015	Time: 23:21:39
 Info
 	Waiting for client...
+Date: 26-08-2015	Time: 16:25:02
+Date: 26-08-2015	Time: 16:25:02
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 26-08-2015	Time: 16:25:02
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 26-08-2015	Time: 16:25:02
+Info
+	Loading created filters...
+FilterHandler:	Date: 26-08-2015	Time: 16:25:02
+Info
+	Done loading created filters
+Date: 26-08-2015	Time: 16:25:02
+Info
+	Waiting for client...
+Date: 26-08-2015	Time: 16:25:07
+Date: 26-08-2015	Time: 16:25:07
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 26-08-2015	Time: 16:25:07
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 26-08-2015	Time: 16:25:07
+Info
+	Loading created filters...
+FilterHandler:	Date: 26-08-2015	Time: 16:25:07
+Info
+	Done loading created filters
+Date: 26-08-2015	Time: 16:25:07
+Info
+	Waiting for client...
+	Connected to client
+Date: 26-08-2015	Time: 16:25:11
+Info
+	Sending list of filters in machine...
+	Number of filters: 1
+	Sending filter: FirstTaskGate with length of: 13
+VideoStream:	Date: 26-08-2015	Time: 16:25:11
+Info
+	checking the latest video file number
+	Latest video file number is: 0
+Date: 26-08-2015	Time: 16:25:11
+Info
+	Receiving server code...
+	Received 101
+Date: 26-08-2015	Time: 16:25:17
+Info
+	Starting video stream...
+VideoStream:	Date: 26-08-2015	Time: 16:25:17
+Info
+	Video stream started. Waiting for client...
+Date: 26-08-2015	Time: 16:25:17
+Info
+	Receiving server code...
+VideoStream:	Date: 26-08-2015	Time: 16:25:17
+Info
+	Waiting for client...
+	Received 000
+Date: 26-08-2015	Time: 16:25:17
+Error
+	Unknown command...
+Date: 26-08-2015	Time: 16:25:17
+Info
+	Receiving server code...
+	Received 000
+Date: 26-08-2015	Time: 16:25:17
+Error
+	Unknown command...
+Date: 26-08-2015	Time: 16:25:17
+Info
+	Receiving server code...
+	Received 001
+Date: 26-08-2015	Time: 16:25:17
+Error
+	Unknown command...
+Date: 26-08-2015	Time: 16:25:17
+Info
+	Receiving server code...
+	Received 1/d
+Date: 26-08-2015	Time: 16:25:17
+Error
+	Unknown command...
+Date: 26-08-2015	Time: 16:25:17
+Info
+	Receiving server code...
+	Received ev/
+Date: 26-08-2015	Time: 16:25:17
+Error
+	Unknown command...
+Date: 26-08-2015	Time: 16:25:17
+Info
+	Receiving server code...
+	Received vid
+Date: 26-08-2015	Time: 16:25:17
+Error
+	Unknown command...
+Date: 26-08-2015	Time: 16:25:17
+Info
+	Receiving server code...
+	Received eo0
+Date: 26-08-2015	Time: 16:25:17
+Error
+	Unknown command...
+Date: 26-08-2015	Time: 16:25:17
+Info
+	Receiving server code...
+VideoStream:	Date: 26-08-2015	Time: 16:25:17
+Info
+	Starting stream...
+Date: 26-08-2015	Time: 16:25:27
+Date: 26-08-2015	Time: 16:25:27
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 26-08-2015	Time: 16:25:27
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 26-08-2015	Time: 16:25:27
+Info
+	Loading created filters...
+FilterHandler:	Date: 26-08-2015	Time: 16:25:27
+Info
+	Done loading created filters
+Date: 26-08-2015	Time: 16:25:27
+Info
+	Waiting for client...
+	Connected to client
+Date: 26-08-2015	Time: 16:25:59
+Info
+	Sending list of filters in machine...
+	Number of filters: 1
+	Sending filter: FirstTaskGate with length of: 13
+VideoStream:	Date: 26-08-2015	Time: 16:25:59
+Info
+	checking the latest video file number
+	Latest video file number is: 0
+Date: 26-08-2015	Time: 16:25:59
+Info
+	Receiving server code...
+	Received 101
+Date: 26-08-2015	Time: 16:26:02
+Info
+	Starting video stream...
+VideoStream:	Date: 26-08-2015	Time: 16:26:02
+Info
+	Video stream started. Waiting for client...
+Date: 26-08-2015	Time: 16:26:02
+Info
+	Receiving server code...
+	Received 000
+Date: 26-08-2015	Time: 16:26:02
+Error
+	Unknown command...
+Date: 26-08-2015	Time: 16:26:02
+Info
+	Receiving server code...
+	Received 000
+Date: 26-08-2015	Time: 16:26:02
+Error
+	Unknown command...
+Date: 26-08-2015	Time: 16:26:02
+Info
+	Receiving server code...
+	Received 001
+Date: 26-08-2015	Time: 16:26:02
+Error
+	Unknown command...
+Date: 26-08-2015	Time: 16:26:02
+Info
+	Receiving server code...
+	Received 1/d
+Date: 26-08-2015	Time: 16:26:02
+Error
+	Unknown command...
+Date: 26-08-2015	Time: 16:26:02
+Info
+	Receiving server code...
+	Received ev/
+Date: 26-08-2015	Time: 16:26:02
+Error
+	Unknown command...
+Date: 26-08-2015	Time: 16:26:02
+Info
+	Receiving server code...
+	Received vid
+Date: 26-08-2015	Time: 16:26:02
+Error
+	Unknown command...
+Date: 26-08-2015	Time: 16:26:02
+Info
+	Receiving server code...
+	Received eo0
+Date: 26-08-2015	Time: 16:26:02
+Error
+	Unknown command...
+Date: 26-08-2015	Time: 16:26:02
+Info
+	Receiving server code...
+VideoStream:	Date: 26-08-2015	Time: 16:26:02
+Info
+	Waiting for client...
+VideoStream:	Date: 26-08-2015	Time: 16:26:02
+Info
+	Starting stream...
+	Received 103
+Date: 26-08-2015	Time: 16:26:54
+Info
+	Operating on new unordered list of filters...
+	Receiving camera...
+Date: 26-08-2015	Time: 16:26:54
+Error
+	Unknown camera request
+	Receiving 2 bytes as length...
+	Received 2 bytes successfully
+Date: 26-08-2015	Time: 16:26:54
+Info
+	Receiving 11 filters...
+	Receiving 2 bytes as length...
+	Received 2 bytes successfully
+	Receiving 3 bytes to fill buffer...
+	Received 3 bytes successfully
+	Received filter: irs
+	Receiving 2 bytes as length...
+	Received 2 bytes successfully
+	Receiving 0 bytes to fill buffer...
+	Received 0 bytes successfully
+	Received filter: 
+	Receiving 2 bytes as length...
+	Received 2 bytes successfully
+	Receiving 0 bytes to fill buffer...
+	Received 0 bytes successfully
+	Received filter: 
+	Receiving 2 bytes as length...
+	Received 2 bytes successfully
+	Receiving 0 bytes to fill buffer...
+	Received 0 bytes successfully
+	Received filter: 
+	Receiving 2 bytes as length...
+	Received 2 bytes successfully
+	Receiving 0 bytes to fill buffer...
+	Received 0 bytes successfully
+	Received filter: 
+	Receiving 2 bytes as length...
+Date: 26-08-2015	Time: 16:29:48
+Date: 26-08-2015	Time: 16:29:48
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 26-08-2015	Time: 16:29:48
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 26-08-2015	Time: 16:29:48
+Info
+	Loading created filters...
+FilterHandler:	Date: 26-08-2015	Time: 16:29:48
+Info
+	Done loading created filters
+Date: 26-08-2015	Time: 16:29:48
+Info
+	Waiting for client...
+	Connected to client
+Date: 26-08-2015	Time: 16:30:09
+Info
+	Sending list of filters in machine...
+	Number of filters: 1
+	Sending filter: FirstTaskGate with length of: 13
+VideoStream:	Date: 26-08-2015	Time: 16:30:09
+Info
+	checking the latest video file number
+	Latest video file number is: 0
+Date: 26-08-2015	Time: 16:30:09
+Info
+	Receiving server code...
+	Received 101
+Date: 26-08-2015	Time: 16:30:11
+Info
+	Starting video stream...
+VideoStream:	Date: 26-08-2015	Time: 16:30:11
+Info
+	Video stream started. Waiting for client...
+Date: 26-08-2015	Time: 16:30:11
+Info
+	Receiving server code...
+	Received 000
+Date: 26-08-2015	Time: 16:30:11
+Error
+	Unknown command...
+Date: 26-08-2015	Time: 16:30:11
+Info
+	Receiving server code...
+VideoStream:	Date: 26-08-2015	Time: 16:30:11
+Info
+	Waiting for client...
+	Received 000
+Date: 26-08-2015	Time: 16:30:11
+Error
+	Unknown command...
+Date: 26-08-2015	Time: 16:30:11
+Info
+	Receiving server code...
+	Received 001
+Date: 26-08-2015	Time: 16:30:11
+Error
+	Unknown command...
+Date: 26-08-2015	Time: 16:30:11
+Info
+	Receiving server code...
+	Received 1/d
+Date: 26-08-2015	Time: 16:30:11
+Error
+	Unknown command...
+Date: 26-08-2015	Time: 16:30:11
+Info
+	Receiving server code...
+	Received ev/
+Date: 26-08-2015	Time: 16:30:11
+Error
+	Unknown command...
+Date: 26-08-2015	Time: 16:30:11
+Info
+	Receiving server code...
+	Received vid
+Date: 26-08-2015	Time: 16:30:11
+Error
+	Unknown command...
+Date: 26-08-2015	Time: 16:30:11
+Info
+	Receiving server code...
+	Received eo0
+Date: 26-08-2015	Time: 16:30:11
+Error
+	Unknown command...
+Date: 26-08-2015	Time: 16:30:11
+Info
+	Receiving server code...
+VideoStream:	Date: 26-08-2015	Time: 16:30:11
+Info
+	Starting stream...

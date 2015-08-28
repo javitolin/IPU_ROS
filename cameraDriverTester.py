@@ -15,19 +15,28 @@ from ffprobe import FFProbe
 tests = 0
 testPassed = 0
 testFailed = 0
+class bcolors:
+    HEADER = '\033[95m'
+    OKBLUE = '\033[94m'
+    OKGREEN = '\033[92m'
+    WARNING = '\033[93m'
+    FAIL = '\033[91m'
+    ENDC = '\033[0m'
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'
 def printFail(text):
 	global testFailed
 	global tests
 	tests = tests + 1
 	testFailed = testFailed + 1
-	print("FAIL: {0}".format(text))
+	print(bcolors.FAIL+"FAIL: {0}".format(text)+bcolors.ENDC)
 
 def printPass(text):
 	global testPassed
 	global tests
 	tests = tests + 1
 	testPassed = testPassed + 1
-	print("PASS: {0}".format(text))
+	print(bcolors.OKGREEN+"PASS: {0}".format(text)+bcolors.ENDC)
 
 def checkFileExists():
 	os.chdir(".")
@@ -36,7 +45,7 @@ def checkFileExists():
 
 def deleteFile(fileName):
 	os.chdir(".")
-	os.remove(fileName)
+	#os.remove(fileName)
 
 def getLength(filename):
 	duration = float(FFProbe(filename).video[0].duration)
@@ -125,7 +134,7 @@ if __name__ == "__main__":
 	seconds = 15
 	print("Running third test for {0} seconds".format(seconds))
 	startTestStream(seconds)
-	print("Tests: {0}, Passed: {1}, Failed: {2}".format(tests,testPassed,testFailed))
+	print("Tests: {0},"+bcolors.OKGREEN+" Passed: {1}"+bcolors.ENDC+","+bcolors.FAIL+" Failed: {2}".format(tests,testPassed,testFailed)+bcolors.ENDC)
 	
 	print("All tests ran")
 	p.terminate()

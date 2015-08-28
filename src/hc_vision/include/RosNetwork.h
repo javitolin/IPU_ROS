@@ -4,7 +4,7 @@
  *  Created on: Apr 17, 2015
  *      Author: jdorfsman
  */
-
+#pragma once
 #ifndef ROSNETWORK_H_
 #define ROSNETWORK_H_
 #include <string>

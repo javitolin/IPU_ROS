@@ -19,6 +19,7 @@
 #include "opencv2/opencv.hpp"
 #include <opencv/cv.h>
 #include <opencv2/highgui/highgui.hpp>
+#include "RosNetwork.h"
 //#include <thread>
 
 
@@ -55,6 +56,7 @@ private:
     bool _leftCameraWorking;
     bool _rightCameraWorking;
     bool _bottomCameraWorking;
+    RosNetwork* _ros;
     void listenOnClient();
     void runFront();
     void runBottom();
@@ -67,7 +69,7 @@ private:
     void initCameras();
 
 public:
-    VideoStream(boost::asio::ip::udp::socket*, FilterRun*, FilterHandler*, Log*);
+    VideoStream(boost::asio::ip::udp::socket*, FilterRun*, FilterHandler*, Log*, RosNetwork* ros);
     ~VideoStream();
     void startStream();
     void killStream();

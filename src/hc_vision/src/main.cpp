@@ -303,7 +303,7 @@ void initNetwork() {
 		sendFiltersInMachine();
 
 		video_stream = new VideoStream(stream_socket, filter_run,
-				filter_handler, _log);
+				filter_handler, _log,rosN);
 	} catch (exception& e) {
 		_log->printLog("", e.what(), "Error");
 		delete _log;
@@ -1004,7 +1004,6 @@ void chatterCallback(const std_msgs::String::ConstPtr& msg) {
 		printf("Code %d not recognized\n",codeReceived);
 }
 void startRosConnection() {
-	rosN = new RosNetwork();
 	_filterThreadPool = new FilterThreadPool();
 	_filterThreadPool->generateFilters(rosN,_log);
 	ros::NodeHandle n;
@@ -1023,7 +1022,6 @@ void startTcpNetwork() {
 		 */
 		int command = receiveCode();
 		commandLog(command);
-
 		if (command == server_codes["config"])
 			changeConfig();
 
@@ -1072,6 +1070,7 @@ void startTcpNetwork() {
 }
 int main(int argc, char* argv[]) {
 	ros::init(argc, argv, "IPU");
+	rosN = new RosNetwork();
 	boost::thread rosConnectionThread(startRosConnection);
 	boost::thread tcpConnectionThread(startTcpNetwork);
 	tcpConnectionThread.join();
