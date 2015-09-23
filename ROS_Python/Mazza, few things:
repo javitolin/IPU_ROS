@@ -1,0 +1,19 @@
+Mazza, few things:
+1. The package has moved to git/IPU_ROS. so use that.
+2. Didn't have the time to make for eclipse.. so you'll have to be hardcore and use sublime text.. 
+3.0. To run the python tester:
+3.1. >cd ROS_Python
+3.2. >python sender.py
+3.3. you can see it the other tab here. lines 17, 24 will print the message itself.
+3.4. Run it only after running roscore and running the server.
+4. I left 4 terminals open:
+a|b
+c|d
+a = python tester
+b = our server
+c = roscore
+d = camera driver
+
+Use them wisely.
+If you want to check out your filter with the python tester (which is a good idea) 
+I added comments for you to understand and add your implementation. Its pretty easy
